@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joboard - About</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #0d0d3d, #1a1a67);
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .app-icon-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .app-icon {
+            width: 90px;
+            height: 90px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .app-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .android-icon {
+            width: 50px;
+            height: 50px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg') no-repeat center;
+            background-size: contain;
+        }
+
+        .ios-icon {
+            width: 50px;
+            height: 50px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg') no-repeat center;
+            background-size: contain;
+        }
+
+        .app-name {
+            color: #ff6b4a;
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .description {
+            color: #d1d5db;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background: linear-gradient(to right, #ff6b4a, #ff4000);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.3s ease-in-out, transform 0.2s;
+        }
+
+        .download-btn:hover {
+            background: #e0451f;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="app-icon-container">
+            <div class="app-icon">
+                <div class="android-icon"></div>
+            </div>
+            <div class="app-icon">
+                <div class="ios-icon"></div>
+            </div>
+        </div>
+        
+        <h2 class="app-name">Download Pushbullet Community App</h2>
+        <p class="description">
+            Stay connected and engaged with our community app. Download it now!
+        </p>
+
+        <a href="https://play.google.com/store/apps/details?id=com.pushbullet.android&pcampaignid=web_share" class="download-btn">
+            Download Now
+        </a>
+    </div>
+</body>
+</html>
